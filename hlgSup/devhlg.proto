@@ -1,0 +1,10 @@
+
+Terminator = CR LF;
+
+getLevel {
+    out "PM";
+    in "PM";
+    in "%f mm";
+    @mismatch{ out "CV1"; in "CV1"; out "CP1"; in "CP1";};
+}
+
