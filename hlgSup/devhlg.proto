@@ -5,6 +5,8 @@ getLevel {
     out "PM";
     in "PM";
     in "%f mm";
+	# If the device is not in the correct mode, this will
+	# put it into the correct mode.
     @mismatch{ out "CV1"; in "CV1"; out "CP1"; in "CP1";};
 }
 
